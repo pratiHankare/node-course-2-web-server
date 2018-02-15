@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node server.js"
   },
   "author": "pratibha hankare",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "cli-engine-heroku": "^4.1.1",
     "express": "^4.16.2",
     "hbs": "^4.0.1"
   }

@@ -4,6 +4,8 @@ const express= require('express');
 const hbs=require('hbs');
 //load fs module here
 const fs=require('fs');
+//creating varible to store the stroee varible on which heroku is going to inturn going to get connected
+var port=process.env.PORT || 9000 ;
 //jus a intialisation of the express
 var app=express();
 /*since the header footer ..etc are reusable codes & had to be included in
@@ -95,6 +97,6 @@ app.get('/bad',(req,res)=>{
   });
 });
 //in order to run the app we have to make the to bind port to the machine
-app.listen(9000,()=>{
-  console.log('Server is up on port  9000');
+app.listen(port,()=>{
+  console.log(`The server is Up on port ${port}`);
 });
